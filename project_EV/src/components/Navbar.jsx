@@ -2,9 +2,11 @@ import {Search, ShoppingCartOutlined} from "@mui/icons-material";
 import { Badge } from "@mui/icons-material";
 import React from "react";
 import styled from "styled-components";
+import { mobile } from "../responsive";
 
 const Container = styled.div`
-  heigth: 60px;
+  height: 60px;
+  ${mobile({ height: "50px" })}
 `;
 
 const Wrapper = styled.div`
@@ -12,6 +14,7 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  ${mobile({ padding: "10px 0px" })}
 `;
 
 const Left = styled.div`
@@ -23,7 +26,9 @@ const Left = styled.div`
 const Language = styled.span`
   font-size: 14px;
   cursor: pointer;
+  ${mobile({ display: "none" })}
 `;
+
 const SearchContainer = styled.div`
   border: 0.5px solid lightgray;
   display: flex;
@@ -31,30 +36,34 @@ const SearchContainer = styled.div`
   margin-left: 25px;
   padding: 5px;
 `;
+
 const Input = styled.input`
   border: none;
+  ${mobile({ width: "50px" })}
 `;
 
 const Center = styled.div`
   flex: 1;
-`;
-
-const Logo = styled.div`
-  font-weight: bold;
   text-align: center;
 `;
 
+const Logo = styled.h1`
+  font-weight: bold;
+  ${mobile({ fontSize: "24px" })}
+`;
 const Right = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  ${mobile({ flex: 2, justifyContent: "center" })}
 `;
 
 const MenuItem = styled.div`
   font-size: 14px;
   cursor: pointer;
   margin-left: 25px;
+  ${mobile({ fontSize: "12px", marginLeft: "10px" })}
 `;
 
 const Navbar = () => {
@@ -62,22 +71,21 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <Left>
-          <Language> EN </Language>
+          <Language>EN</Language>
           <SearchContainer>
-            <Input />
+            <Input placeholder="Search" />
             <Search style={{ color: "gray", fontSize: 16 }} />
           </SearchContainer>
         </Left>
         <Center>
-          {" "}
           <Logo>VELTRIC</Logo>
         </Center>
         <Right>
           <MenuItem>REGISTER</MenuItem>
           <MenuItem>SIGN IN</MenuItem>
           <MenuItem>
-          <Badge badgeContent={4} color="primary">
-              <ShoppingCartOutlined/>
+            <Badge badgeContent={4} color="primary">
+              <ShoppingCartOutlined />
             </Badge>
           </MenuItem>
         </Right>
