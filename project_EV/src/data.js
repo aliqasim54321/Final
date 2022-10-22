@@ -1,24 +1,35 @@
 import light from "../src/images/light.png";
 import bike from "../src/images/bike.png";
+import drive from "../src/images/drive.png";
+import first from "../src/images/first.jpg";
+import second from "../src/images/second.jpg";
+import third from "../src/images/third.jpg"
+import { height } from "@mui/system";
+
+// import drive from "../src/images/drive";
 
 export const sliderItems = [
   {  id : 1,
     img: `${light}`,
       title: "EV's BIKE",
       desc: " DONT COMPARE ON PRICE",
-      bg: "90F384",
+      bg: "white",
   },
   {  id: 2,
-    img: `${light}`,
-      title: "WINTER SALE",
+    img: `${drive}`,
+      title: "BIKE-1",
       desc: " DONT COMPARE ON PRICE",
       bg: "90F384",
+      width:"120%",
+      height:"150%"
+
+      // height:
     
   },
 
   {  id: 3,
     img: `${light}`,
-      title: "MOON SALE",
+      title: "BIKE-2",
       desc: " DONT COMPARE ON PRICE",
       bg: "90F384",
     
@@ -30,17 +41,18 @@ export const sliderItems = [
 export const categories = [
   {
     id: 1,
-    img: `${light}`,
+    img: `${first}`,
     title: "SHIRT PHELA",
+    
   },
   {
     id: 2,
-    img: `${light}`,
+    img: `${second}`,
     title: "LOUNGEWEAR dUSRA",
   },
   {
     id: 3,
-    img: `${light}`,
+    img: `${third}`,
     title: "LIGHT THISRA",
   },
 ];

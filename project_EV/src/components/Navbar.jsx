@@ -1,8 +1,10 @@
-import {Search, ShoppingCartOutlined} from "@mui/icons-material";
+import { ShoppingCartOutlined} from "@mui/icons-material";
 import { Badge } from "@mui/icons-material";
 import React from "react";
 import styled from "styled-components";
 import { mobile } from "../responsive";
+import { Link } from "react-router-dom";
+import Logo from "../images/Logo.png";
 
 const Container = styled.div`
   height: 60px;
@@ -23,19 +25,20 @@ const Left = styled.div`
   align-items: center;
 `;
 
-const Language = styled.span`
-  font-size: 14px;
-  cursor: pointer;
-  ${mobile({ display: "none" })}
-`;
+// const Language = styled.span`
+//   font-size: 40px;
+//   font-weight:50px;
+//   cursor: pointer;
+//   ${mobile({ display: "none" })}
+// `;
 
-const SearchContainer = styled.div`
-  border: 0.5px solid lightgray;
-  display: flex;
-  align-items: center;
-  margin-left: 25px;
-  padding: 5px;
-`;
+// const SearchContainer = styled.div`
+//   border: 0.5px solid lightgray;
+//   display: flex;
+//   align-items: center;
+//   margin-left: 25px;
+//   padding: 5px;
+// `;
 
 const Input = styled.input`
   border: none;
@@ -47,7 +50,13 @@ const Center = styled.div`
   text-align: center;
 `;
 
-const Logo = styled.h1`
+const Image = styled.h1`
+border: 2px solid red;
+width: 400px;
+height: 70px;
+`;
+
+const Title = styled.h1`
   font-weight: bold;
   ${mobile({ fontSize: "24px" })}
 `;
@@ -60,7 +69,13 @@ const Right = styled.div`
 `;
 
 const MenuItem = styled.div`
-  font-size: 14px;
+  font-size: 15px;
+  font-weight:bold;
+  border-style:solid;
+  border-radius:20%;
+  padding : 1.5%;
+  border:ronded;
+  background-color:teal;
   cursor: pointer;
   margin-left: 25px;
   ${mobile({ fontSize: "12px", marginLeft: "10px" })}
@@ -71,23 +86,16 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <Left>
-          <Language>EN</Language>
-          <SearchContainer>
-            <Input placeholder="Search" />
-            <Search style={{ color: "gray", fontSize: 16 }} />
-          </SearchContainer>
+        <Image src ={Logo} alt="Logo" />
         </Left>
         <Center>
-          <Logo>VELTRIC</Logo>
+          <Title>VELTRIC</Title>
         </Center>
         <Right>
-          <MenuItem>REGISTER</MenuItem>
-          <MenuItem>SIGN IN</MenuItem>
-          <MenuItem>
-            <Badge badgeContent={4} color="primary">
-              <ShoppingCartOutlined />
-            </Badge>
-          </MenuItem>
+          <MenuItem><Link to='/register'>REGISTER</Link></MenuItem>
+          <MenuItem><Link to='/Login'>SIGN IN</Link></MenuItem>
+          
+         
         </Right>
       </Wrapper>
     </Container>

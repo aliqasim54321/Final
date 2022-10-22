@@ -8,6 +8,7 @@ display : flex;
 align-item: left;
 justify-content : center;
 flex-direction : column;
+// padding-left : 36%
 `;
 
 const Title =styled.h1`
@@ -15,11 +16,13 @@ font-size : 70px;
 margin-bottom : 20px;
 
 
+
 `;
 const Desc =styled.div`
     font-size: 30px;
     font-weight : 600;
     margin-bottom:20px;
+    
 
 `;
 const InputContainer =styled.div`
@@ -29,12 +32,13 @@ const InputContainer =styled.div`
     display:flex;
     justify-content:space-between;
     border : 1px solid lightgray;
-`;
+    margin-left:25%; 
+ `;
 
 const Input =styled.input`
     border: none;
     flex: 8;
-    padding-left : 20px; 
+    // padding-left : 20px; 
 `;
 const Button =styled.button`
     flex : 1;
@@ -45,11 +49,13 @@ const Button =styled.button`
 
 function Newsletter() {
   return (
+    <>
+    <center>
     <Container>
         <Title>
-            Newsletter
+            Stay up to Date
         </Title>
-        <Desc>mere ku kyun ye css nahi aara
+        <Desc>Subscribe to Newsletter
                     </Desc>
         <InputContainer>
             <Input placeholder="Your email"/>
@@ -58,6 +64,8 @@ function Newsletter() {
             </Button>
         </InputContainer>
     </Container>
+    </center>
+    </>
   )
 }
 

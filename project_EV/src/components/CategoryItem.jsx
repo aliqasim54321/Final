@@ -1,8 +1,12 @@
 import styled from "styled-components";
 import { mobile } from "../responsive";
+import {Link} from "react-router-dom"
 
 const Container = styled.div`
   flex: 1;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px;
   margin: 3px;
   height: 70vh;
   position: relative;
@@ -29,7 +33,9 @@ const Info = styled.div`
 `;
 
 const Title = styled.h1`
-    color:white;
+    position: absolute;
+    bottom: 0;
+    color:black;
     margin-bottom: 20px;
 `;
 
@@ -37,18 +43,19 @@ const Button = styled.button`
     border:none;
     padding: 10px;
     background-color: white;
-    color:gray;
+    color:black;
     cursor: pointer;
     font-weight: 600;
 `;
 
-const CategoryItem = ({ item }) => {
+const CategoryItem = ({ item ,key,index}) => {
+  console.log(index)
   return (
     <Container>
       <Image src={item.img} />
       <Info>
         <Title>{item.title}</Title>
-        <Button>SHOP NOW</Button>
+        <Button><Link to={`/model${index+1}` } >BOOK NOW</Link></Button>
       </Info>
     </Container>
   );

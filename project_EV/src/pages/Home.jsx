@@ -1,23 +1,20 @@
 import  Slider  from '../components/Slider';
+import Video from "../pages/Video";
 import React from 'react';
-import Announcement from '../components/Announcement';
-import Navbar from '../components/Navbar';
-import Products from '../components/Products';
 import  Categories  from "../components/Categories.jsx";
-import Newsletter from '../components/Newsletter';
-import Footer from '../components/Footer';
+import Model1 from './Model1';
 
 const Home = () => {
   return (
     <div>
-      <Announcement/>
-      <Navbar/>  
-      <Slider/>  
+      
+      <Slider/>      
       <Categories/>
-      <Products/>
-      <Newsletter/>
-      <Footer/>
-    </div>
+      <Model1/>
+      <Video/>
+      
+      
+      </div>
   )
 }
 
