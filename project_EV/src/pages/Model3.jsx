@@ -141,8 +141,8 @@ const Model3 = () => {
             </Filter>
           </FilterContainer>
           <AddContainer>
-            <Button>Order now</Button>
-            <Button>Free test drive</Button>
+          <a href="https://rzp.io/i/5JoBi6CMGD"><Button>Order now</Button></a>
+            <a href="https://cal.com/syed-inam-razrck"><Button>Free test drive</Button></a>
           </AddContainer>
         </InfoContainer>
         <br></br>
@@ -151,10 +151,11 @@ const Model3 = () => {
           <Image src={nqi2} />
           <br></br>
         </div>
-<br></br> <br></br>
+<br></br> <br></br><center>
         <div className="videos">
-                  <video controls autoPlay><source src={vid1}/></video>
+                  <video controls autoPlay height="720px" width="1000px"><source src={vid1}/></video>
                   </div>
+                  </center>
     </Container>
   );
 };

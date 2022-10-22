@@ -4,7 +4,7 @@ import mqi2 from "../images/model3/nqi2.png";
 import mqi3 from "../images/model1/mqi3.jpg";
 import vid1 from '../images/model1/vid1.mp4'
 
-
+import { Link } from "react-router-dom";
 
 const Container = styled.div``;
 
@@ -76,7 +76,7 @@ const FilterSize = styled.select`
   padding: 5px;
 `;
 
-const FilterSizeOption = styled.option``;
+// const FilterSizeOption = styled.option``;
 
 const AddContainer = styled.div`
   width: 50%;
@@ -85,33 +85,33 @@ const AddContainer = styled.div`
   justify-content: space-between;
 `;
 
-const AmountContainer = styled.div`
-  display: flex;
-  align-items: center;
-  font-weight: 700;
-`;
+// const AmountContainer = styled.div`
+//   display: flex;
+//   align-items: center;
+//   font-weight: 700;
+// `;
 
-const Amount = styled.span`
-  width: 30px;
-  height: 30px;
-  border-radius: 10px;
-  border: 1px solid teal;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0px 5px;
-`;
+// const Amount = styled.span`
+//   width: 30px;
+//   height: 30px;
+//   border-radius: 10px;
+//   border: 1px solid teal;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   margin: 0px 5px;
+// `;
 
 const Button = styled.button`
-  padding: 15px;
-  border: 2px solid teal;
-  background-color: white;
-  cursor: pointer;
-  font-weight: 500;
+padding: 15px;
+border: 2px solid teal;
+background-color: white;
+cursor: pointer;
+font-weight: 800;
 
-  &:hover {
-    background-color: #f8f4f4;
-  }
+&:hover {
+  background-color: #f8f4f4;
+  }
 `;
 
 
@@ -153,8 +153,8 @@ const Model1 = () => {
             </Filter>
           </FilterContainer>
           <AddContainer>
-            <Button>Order now</Button>
-            <Button>Free test drive</Button>
+            <a href="https://rzp.io/i/5JoBi6CMGD"><Button>Order now</Button></a>
+           <a href="https://cal.com/syed-inam-razrck"><Button>Free test drive</Button></a> 
           </AddContainer>
         </InfoContainer>
         <br></br>
@@ -164,11 +164,11 @@ const Model1 = () => {
           <br></br>
         </div>
 
-<br></br>
+<br></br><center>
         <div className="video" >
-                  <video controls autoPlay><source src={vid1}/></video>
+                  <video controls autoPlay height="720px" width="1000px"  ><source src={vid1}/></video>
                   </div>
-
+</center>
 
 
     </Container>

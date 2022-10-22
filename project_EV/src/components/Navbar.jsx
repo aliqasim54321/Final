@@ -69,13 +69,14 @@ const Right = styled.div`
 `;
 
 const MenuItem = styled.div`
-  font-size: 15px;
+  font-size: 23px;
   font-weight:bold;
-  border-style:solid;
+  border: solid;
   border-radius:20%;
   padding : 1.5%;
   border:ronded;
-  background-color:teal;
+   color:teal;
+  background-color:white;
   cursor: pointer;
   margin-left: 25px;
   ${mobile({ fontSize: "12px", marginLeft: "10px" })}
@@ -93,7 +94,7 @@ const Navbar = () => {
         </Center>
         <Right>
           <MenuItem><Link to='/register'>SIGNUP</Link></MenuItem>
-          <MenuItem><Link to='/Login'>LOGIN IN</Link></MenuItem>
+          <MenuItem><Link to='/Login'>LOGIN</Link></MenuItem>
           
          
         </Right>

@@ -10,6 +10,7 @@ import Model2 from "./pages/Model2"
 import Model3 from "./pages/Model3"
 import Newsletter from "./components/Newsletter.jsx";
 import Footer from "./components/Footer.jsx";
+import Chat from "./components/Chat.js";
 
 
 
@@ -29,7 +30,7 @@ const App = () => {
       </Routes>
       <Newsletter/>
       <Footer/>
-
+      <Chat/>
       
       </>
       

@@ -113,7 +113,7 @@ const Model2 = () => {
     <Container>
       <Wrapper>
         <ImgContainer>
-          <Image src="https://images.unsplash.com/photo-1648204834832-78e68052c04f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" />
+          <Image src="https://images.unsplash.com/photo-1648204834832-78e68052c04f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop  " />
         </ImgContainer >
           <InfoContainer>
           <Title>BUILT FOR SPEED</Title>
@@ -133,8 +133,8 @@ NIU’s proprietary FOC controller dynamically manages the Bosch motor to provid
             </Filter>
           </FilterContainer>
           <AddContainer>
-            <Button>Order now</Button>
-            <Button>Free test drive</Button>
+          <a href="https://rzp.io/i/5JoBi6CMGD"><Button>Order now</Button></a>
+            <a href="https://cal.com/syed-inam-razrck"><Button>Free test drive</Button></a>
           </AddContainer>
         </InfoContainer>
 <br></br>
@@ -142,11 +142,11 @@ NIU’s proprietary FOC controller dynamically manages the Bosch motor to provid
       <div className="images-class">
           <Image src={nqi2} />
           <br></br>
-        </div>
-
+        </div><center>
         <div className="videos">
-                  <video controls autoPlay><source src={vid1}/></video>
+                  <video controls autoPlay height="720px" width="1000px"><source src={vid1}/></video>
                   </div>
+                  </center>
     </Container>
   );
 };
