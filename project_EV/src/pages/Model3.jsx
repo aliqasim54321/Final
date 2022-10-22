@@ -2,6 +2,10 @@ import styled from "styled-components";
 import uqi1 from "../images/model3/uqi1.png";
 import uqi2 from "../images/model3/uqi2.png";
 import uqi3 from "../images/model3/uqi3.jpg";
+import nqi2 from "/home/rehaan/Final/project_EV/src/images/model3/nqi2.png";
+
+
+import vid1 from "../images/model3/vid1.mp4"
 
 const Container = styled.div``;
 
@@ -113,9 +117,6 @@ const Model3 = () => {
       <Wrapper>
         <ImgContainer>
           <Image src="https://images.unsplash.com/photo-1648204834832-78e68052c04f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" />
-          <Image src ={uqi1} />
-          <Image src = {uqi2} />
-          <Image src = {uqi3}/>
         </ImgContainer>
         <InfoContainer>
           <Title><b>UQi GT</b></Title>
@@ -144,7 +145,16 @@ const Model3 = () => {
             <Button>Free test drive</Button>
           </AddContainer>
         </InfoContainer>
+        <br></br>
       </Wrapper>
+      <div className="images-class">
+          <Image src={nqi2} />
+          <br></br>
+        </div>
+<br></br> <br></br>
+        <div className="videos">
+                  <video controls autoPlay><source src={vid1}/></video>
+                  </div>
     </Container>
   );
 };

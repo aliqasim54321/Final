@@ -1,12 +1,18 @@
 import styled from "styled-components";
 import mqi from "../images/model1/mqi.png";
-import mqi2 from "../images/model1/mqi2.png";
+import mqi2 from "../images/model3/nqi2.png";
 import mqi3 from "../images/model1/mqi3.jpg";
+import vid1 from '../images/model1/vid1.mp4'
+
+
 
 const Container = styled.div``;
 
 const Wrapper = styled.div`
   padding: 50px;
+  margin-left: 20px;
+  height : 40%;
+  margin-right:20px;
   display: flex;
 `;
 
@@ -16,7 +22,7 @@ const ImgContainer = styled.div`
 
 const Image = styled.img`
   width: 100%;
-  height: 90vh;
+  height: 59vh;
   object-fit: cover;
   flex: 1;
 `;
@@ -108,19 +114,24 @@ const Button = styled.button`
   }
 `;
 
+
 const Model1 = () => {
   return (
+
+    <>
+
     <Container>
       <Wrapper>
-        <ImgContainer>
+        {/* <ImgContainer>
           <Image src="https://images.unsplash.com/photo-1648204834832-78e68052c04f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" />
-          <Image src ={mqi} />
-          <Image src = {mqi2} />
-          <Image src = {mqi3}/>
+          <br></br>
+        </ImgContainer> */}
 
-          
-        </ImgContainer>
-      
+        <div className="images-class">
+          <Image src={mqi3} />
+          <br></br>
+        </div>
+
         <InfoContainer>
           <Title>THE COMMUTING ALL-ST</Title>
           <Desc>
@@ -132,6 +143,7 @@ const Model1 = () => {
             modes, and brilliant lighting ensure that you can conquer any
             commute with ease.
           </Desc>
+
           <FilterContainer>
             <Filter>
               <FilterTitle>Color</FilterTitle>
@@ -145,8 +157,23 @@ const Model1 = () => {
             <Button>Free test drive</Button>
           </AddContainer>
         </InfoContainer>
+        <br></br>
       </Wrapper>
+      <div className="images-class">
+          <Image src={mqi2} />
+          <br></br>
+        </div>
+
+<br></br>
+        <div className="video" >
+                  <video controls autoPlay><source src={vid1}/></video>
+                  </div>
+
+
+
     </Container>
+
+    </>
   );
 };
 

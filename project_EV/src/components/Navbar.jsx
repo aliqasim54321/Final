@@ -20,9 +20,9 @@ const Wrapper = styled.div`
 `;
 
 const Left = styled.div`
-  flex: 1;
-  display: flex;
-  align-items: center;
+  // flex: 1;
+  // display: flex;
+  // align-items: center;
 `;
 
 // const Language = styled.span`
@@ -86,14 +86,14 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <Left>
-        <Image src ={Logo} alt="Logo" />
+        
         </Left>
         <Center>
           <Title>VELTRIC</Title>
         </Center>
         <Right>
-          <MenuItem><Link to='/register'>REGISTER</Link></MenuItem>
-          <MenuItem><Link to='/Login'>SIGN IN</Link></MenuItem>
+          <MenuItem><Link to='/register'>SIGNUP</Link></MenuItem>
+          <MenuItem><Link to='/Login'>LOGIN IN</Link></MenuItem>
           
          
         </Right>

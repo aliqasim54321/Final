@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import nqi1 from "../images/model2/nqi1.png";
-import nqi2 from "../images/model2/nqi2.png";
+import nqi2 from "../images/model3/nqi2.png";
 import nqi11 from "../images/model2/nqi11.jpg";
+import vid1 from "../images/model2/vid1.mp4"
 
 const Container = styled.div``;
 
@@ -113,9 +114,6 @@ const Model2 = () => {
       <Wrapper>
         <ImgContainer>
           <Image src="https://images.unsplash.com/photo-1648204834832-78e68052c04f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" />
-          <Image src ={nqi1} />
-          <Image src = {nqi2} />
-          <Image src = {nqi11}/>
         </ImgContainer >
           <InfoContainer>
           <Title>BUILT FOR SPEED</Title>
@@ -139,7 +137,16 @@ NIU’s proprietary FOC controller dynamically manages the Bosch motor to provid
             <Button>Free test drive</Button>
           </AddContainer>
         </InfoContainer>
+<br></br>
       </Wrapper>
+      <div className="images-class">
+          <Image src={nqi2} />
+          <br></br>
+        </div>
+
+        <div className="videos">
+                  <video controls autoPlay><source src={vid1}/></video>
+                  </div>
     </Container>
   );
 };
